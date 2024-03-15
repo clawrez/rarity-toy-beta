@@ -534,7 +534,7 @@ function updateGUI() {
         document.getElementById("roll-regen-rarity").textContent = "regenerate (" + sormat((1.3 ** (player.bestRoll.idx - 8)) * player.regenRLuck) + "x luck)"
     }
 
-    document.getElementById("glisten").textContent = format(player.glisten) + " glisten"
+    document.getElementById("glisten").textContent = format(Math.floor(player.glisten)) + " glisten"
 
     for (let i = 0; i < 10; i++) {
         if (!player.last10RegenRolls[i]) {
